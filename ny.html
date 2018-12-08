@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+        #Logo{
+            width: 600px;
+            margin: auto;
+            position: relative;
+            bottom: 50px;
+           
+            
+            
+        }
+        .display-3{
+            text-align: center;
+            color: white;
+            margin: auto;
+        }
+        .jumbotron{
+            background: black;
+            height: 150px;
+            margin: 25px;
+            border-radius: 25px;
+    
+        }
+        .card-body{
+        
+            display: inline-block;
+            text-align: center;
+            border-radius: 25px;
+            border: 1px solid black;
+            
+        
+    
+    
+        }
+        .position{
+            position: absolute;
+            left:20px;
+        }
+        .card{
+            margin: auto;
+            border-radius: 25px;
+        }
+        .card-header{
+            border-radius: 25px;
+            background: black;
+            color: white;
+            text-align: center;
+            font-size: 1em;
+            margin-bottom: 30px;
+            
+        }
+        h5{
+            font-size: 1.5em;
+        }
+        #head{
+            z-index: 1000;
+        }
+        
+    </style>
+<body>
+    <div class = "container">
+        <div class="row">
+            <div class = "col-md-12">
+                    <div class="jumbotron">
+                            <h1 id = "head" class="display-3"><img id="Logo" src="http://www.steveandalex.org/wp-content/uploads/2018/08/new-york-times-logo-black-and-white.png"></h1>    
+                    </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class ="col-md-12">
+                    <div class="card" style="width: 65rem;">
+            
+                        <div class="card-body">
+                                <div class="card-header">
+                                        <h5>Search New York Times Articles</h5>
+                                </div>
+                            
+                            <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="inputGroup-sizing-default search">Search Terms</span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                            </div>
+                            <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="inputGroup-sizing-default numtoRet">Number of Records to Retrieve:</span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                            </div>
+                            <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="inputGroup-sizing-default startYear">Start Year: </span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                            </div>
+                            <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="inputGroup-sizing-default endYear">End Year</span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                            </div>
+                            <a id="search" class="btn btn-primary">Search</a>
+                            <a id="clear-results" class = "btn btn-primary">Clear Results</a>
+                        </div>
+                    </div>
+            </div>
+                
+        </div>
+        <div  class= "row">
+            <div class = "col-md-12">
+                    <div class="card"  style="width: 65rem;">
+                        <div class = "card-body">
+                            <div class="card-header">
+                              <h5>Top Articles</h5>
+                            </div>
+                        </div>
+                            
+                            <ul class="list-group list-group-flush" id = "results">
+                              
+                            </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+<script src="ny.js"></script>
+</html>
